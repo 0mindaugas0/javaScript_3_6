@@ -14,9 +14,9 @@ let y2;
 y2 = prompt("Įveskite B taško Y koordinates");
 y2 = + y2;
 
-let AB = atkarposIlgis(x1, y1, x2, y2);
+let atstumas = atkarposIlgis(x1, y1, x2, y2);
 console.log(+ AB);
 
-function atkarposIlgis(Ax, Ay, Bx, By){
-    return Math.sqrt((Bx - Ax) * (Bx - Ax) + (By - Ay) * (By - Ay));
+function atkarposIlgis(x1, y1, x2, y2){
+    return Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
 }
